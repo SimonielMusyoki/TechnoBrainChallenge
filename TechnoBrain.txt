@@ -1,0 +1,27 @@
+WebDev Candidates Solutions:
+Question One:
+Total Price Per aker is calculates as:(Case of Marker A)
+
+SELECT SUM(SalePriceInDollar)
+FROM CarSales
+WHERE CarMarker='Maker A' AND SaleDate BETWEEN (DATEADD(dd,-30,GETDATE())) AND (GETDATE())
+
+Total Price Per Model: (case of Model 'A Model X V6')
+
+SELECT SUM(SalePriceInDollar)
+FROM CarSales
+WHERE CarMarker='A Model X V6' AND SaleDate BETWEEN (DATEADD(dd,-30,GETDATE())) AND (GETDATE())
+
+
+Question 2B.
+Time Complexity:
+For each delete: O(1)
+For an insertion:  O(1)
+For node entered; the total complexity is the total distance from the leaf node, depending on which character is entered
+
+GitHub Link: https://github.com/SimonielMusyoki/TechnoBrainChallenge
+
+Website: https://simonielmusyoki.pythonanywhere.com/
+
+
+
